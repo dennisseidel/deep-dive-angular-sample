@@ -31,5 +31,13 @@
 
 <div>
   <label>Product</label>
-  {{ price }}
+  <ul>
+    <li *ngFor="let product of products">
+      <b>{{ product.name }}</b>
+      <div>{{ product.use }}</div>
+      <div>Out-of-pocket maximum {{ product.outOfPocketMaximum }}</div>
+      <div>Deductable {{ product.deductable }}</div>
+      <div>Monthly Premium {{ product.monthlyPremium }}</div>
+    </li>
+  </ul>
 </div>
