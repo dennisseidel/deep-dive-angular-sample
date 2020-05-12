@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'healthinsurance-price-calculator';
+  price = '';
 
   onButtonClick() {
-    console.log("This is test.")
+    this.price = '40';
   }
 }
