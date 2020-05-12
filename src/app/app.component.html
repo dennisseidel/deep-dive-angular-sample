@@ -2,22 +2,22 @@
 
 <div>
   <label>Coverage starting</label>
-  <input/>
+  <input (input)="onChangeCoverageStart($event.target.value)"/>
 </div>
 
 <div>
   <label>Coverage for</label>
-  <input/>
+  <input (input)="onChangeCoverageScope($event.target.value)"/>
 </div>
 
 <div>
   <label>ZIP code</label>
-  <input/>
+  <input (input)="onChangeZip($event.target.value)"/>
 </div>
 
 <div>
   <label>My birthdate</label>
-  <input type="date"/>
+  <input type="date" (input)="onChangeBirthdate($event.target.value)"/>
 </div>
 
 <div>
