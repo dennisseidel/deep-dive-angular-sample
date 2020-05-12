@@ -10,6 +10,7 @@ export class AppComponent {
   coverageScope = '';
   zip = '';
   birthdate = '';
+  governmentSubside = false;
   price = '';
 
   onChangeCoverageStart(value: string) {
@@ -26,6 +27,10 @@ export class AppComponent {
 
   onChangeBirthdate(value: string ) {
     this.birthdate = value;
+  }
+
+  onChangeGovernmentSubsides() {
+    this.governmentSubside = !this.governmentSubside;
   }
 
   onButtonClick() {
