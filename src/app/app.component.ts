@@ -40,33 +40,33 @@ export class AppComponent {
           name: 'Simple Bronze LOWEST PREMIUM',
           desciption: 'If you rarely see a doctor, this low-cost plan could work for you.',
           use: 'Basic Use: Good for infrequent medical needs',
-          outOfPocketMaximum: '$8,150',
-          deductable: '$8,150',
-          monthlyPremium: '$533.88'
+          outOfPocketMaximum: '8150',
+          deductable: '8150',
+          monthlyPremium: '533.88'
         },
         {
           name: 'Saver Bronze',
           desciption: 'If you have minimal health care needs, this plan could work for you.',
           use: 'Basic Use: Good for infrequent medical needs',
-          outOfPocketMaximum: '$7,200',
-          deductable: '$7,200',
-          monthlyPremium: '$536.74'
+          outOfPocketMaximum: '7200',
+          deductable: '7200',
+          monthlyPremium: '536.74'
         },
         {
           name: 'Classic Silver BEST SELLING',
           desciption: 'Great plan if you want affordable prescription drugs starting day 1.',
           use: 'Regular Use: Good for occasional medical needs',
-          outOfPocketMaximum: '$7,900',
-          deductable: '$1,300',
-          monthlyPremium: '$728.12'
+          outOfPocketMaximum: '7900',
+          deductable: '1300',
+          monthlyPremium: '728.12'
         },
         {
           name: 'Classic Gold',
           desciption: 'This plan has a reasonable deductible and great prescription drugs benefits.',
           use: 'Frequent Use: Good for high medical needs',
-          outOfPocketMaximum: '$4,000',
-          deductable: '$600',
-          monthlyPremium: '$919.47'
+          outOfPocketMaximum: '4000',
+          deductable: '600',
+          monthlyPremium: '919.47'
         },
       ]
     }
