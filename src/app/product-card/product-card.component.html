@@ -1,9 +1,13 @@
 <ul>
-  <li *ngFor="let product of products; let i = index" (click)="onClick(i)">
-    <b [class]="{ highlight: selectedProduct===i }">{{ product.name }}</b>
-    <div>{{ product.use }}</div>
-    <div>Out-of-pocket maximum {{ product.outOfPocketMaximum | currency: 'USD' }}</div>
-    <div>Deductable {{ product.deductable | currency: 'USD' }}</div>
-    <div>Monthly Premium {{ product.monthlyPremium | currency: 'USD' }}</div>
-  </li>
+  <ng-container *ngFor="let product of products; let i = index">
+    <li *ngIf="i<=2" (click)="onClick(i)">
+      <b [class]="{ highlight: selectedProduct === i }">{{ product.name }}</b>
+      <div>{{ product.use }}</div>
+      <div>
+        Out-of-pocket maximum {{ product.outOfPocketMaximum | currency: "USD" }}
+      </div>
+      <div>Deductable {{ product.deductable | currency: "USD" }}</div>
+      <div>Monthly Premium {{ product.monthlyPremium | currency: "USD" }}</div>
+    </li>
+  </ng-container>
 </ul>
