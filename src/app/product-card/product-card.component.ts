@@ -7,8 +7,13 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProductCardComponent implements OnInit {
   @Input() products = '';
+  selectedProduct = -1;
 
   constructor() { }
+
+  onClick(index: number) {
+    this.selectedProduct = index
+  }
 
   ngOnInit(): void {
   }
