@@ -6,9 +6,13 @@ import { NotFoundComponent } from './not-found/not-found.component'
 const routes: Routes = [
   { path: 'home' , component: AppComponent},
   {
+    path: 'search',
+    loadChildren: () => import('./search-doctors-drugs/search-doctors-drugs.module').then(m => m.SearchDoctorsDrugsModule)
+  },
+  {
     path: '**',
     component: NotFoundComponent
-  }
+  },
 ];
 
 @NgModule({

@@ -5,7 +5,7 @@ import { SearchDoctorsDrugsHomeComponent } from './search-doctors-drugs-home/sea
 
 
 const routes: Routes = [{
-  path: 'search',
+  path: '',
   component: SearchDoctorsDrugsHomeComponent
 }];
 
