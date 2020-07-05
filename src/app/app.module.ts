@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SearchDoctorsDrugsModule } from './search-doctors-drugs/search-doctors-drugs.module';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    NavigationBarComponent
   ],
   imports: [
     BrowserModule,
