@@ -12,4 +12,8 @@ export class SearchDoctorsDrugsHomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onTerm(term: string) {
+    console.log(term)
+  }
+
 }
