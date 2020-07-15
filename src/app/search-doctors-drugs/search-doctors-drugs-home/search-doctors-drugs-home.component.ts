@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WikidocService } from '../wikidoc.service'
 
 @Component({
   selector: 'app-search-doctors-drugs-home',
@@ -7,13 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchDoctorsDrugsHomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private wikidoc: WikidocService) { }
 
   ngOnInit(): void {
   }
 
   onTerm(term: string) {
-    console.log(term)
+    const results = this.wikidoc.search(term)
+    console.log(results)
   }
 
 }
